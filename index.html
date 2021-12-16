@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/home/src/css/style.css">
+    <title>Login | Faça seu login</title>
+</head>
+
+<body><br><br><br>
+
+    <div class="form-login-user">
+        <h1>Login</h1><br>
+        <input type="email" class="email-user" name="email" placeholder="nome@exemplo.com" required />
+        <div class="password-view">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="password" class="senha-user" name="senha" id="senha-dig" placeholder="Digite sua senha"
+                required />
+            <input type="submit" class="btn-view-user" id="viewUsuario" onclick="viewSenha(), viewNome()"
+                value="mostrar">
+        </div><br><br><br>
+        <input type="button" class="btn-enter" onclick="loginUsuario()" value="enter">
+    </div>
+    <script src="/home/src/js/app.js"></script>
+</body>
+
+</html>
