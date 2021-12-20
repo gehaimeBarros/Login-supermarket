@@ -6,22 +6,104 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/home/src/css/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/home/img/img2.PNG">
     <title>Login | Faça seu login</title>
 </head>
 
 <body><br><br><br>
 
     <div class="form-login-user">
-        <h1>Login</h1><br>
-        <input type="email" class="email-user" name="email" placeholder="nome@exemplo.com" required />
+        <h1>Dev login</h1><br>
+        <input type="text" class="email-user" name="email" id="email-usuario" placeholder="Email ou Telefone"
+            required />
         <div class="password-view">
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <input type="password" class="senha-user" name="senha" id="senha-dig" placeholder="Digite sua senha"
-                required />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="password" class="senha-user" name="senha" id="senha-dig" placeholder="Senha" required />
+            <input type="button" onclick="ClearFields();" class="btn-excluir" value="x">
             <input type="submit" class="btn-view-user" id="viewUsuario" onclick="viewSenha(), viewNome()"
-                value="mostrar">
-        </div><br><br><br>
-        <input type="button" class="btn-enter" onclick="loginUsuario()" value="enter">
+                value="Mostrar" required />
+            <div class="menu-back-pass">
+                <a href="" class="backPass">Esqueceu a conta ?</a>
+            </div>
+        </div><br>
+        <input type="button" class="btn-enter" id="enter-usuario" onclick="loginUsuario(), btnEnter()" value="entrar"><br><br><br><br><br><br>
+        <script type="text/javascript" language="JavaScript">
+        
+            var now = new Date();
+            var hours = now.getHours();
+            var minutes = now.getMinutes();
+            var timeValue = "" + ((hours > 12) ? hours - 12 : hours)
+
+            timeValue += ((minutes < 10) ? ":0" : ":") + minutes
+            timeValue += (hours >= 12) ? " PM" : " AM"
+            timerRunning = true;
+            mydate = new Date();
+            myday = mydate.getDay();
+            mymonth = mydate.getMonth();
+            myweekday = mydate.getDate();
+            weekday = myweekday;
+            myyear = mydate.getYear();
+            year = myyear;
+
+            if (myday == 0)
+                day = " Domingo, "
+
+            else if (myday == 1)
+                day = " Segunda Feira, "
+
+            else if (myday == 2)
+                day = " Terça Feira, "
+
+            else if (myday == 3)
+                day = " Quarta Feira, "
+
+            else if (myday == 4)
+                day = " Quinta Feira, "
+
+            else if (myday == 5)
+                day = " Sexta Feira, "
+
+            else if (myday == 6)
+                day = " Sábado, "
+
+            if (mymonth == 0)
+                month = " de Janeiro de "
+
+            else if (mymonth == 1)
+                month = " de Fevereiro de "
+
+            else if (mymonth == 2)
+                month = " de Março de "
+
+            else if (mymonth == 3)
+                month = " de April de "
+
+            else if (mymonth == 4)
+                month = " de Maio de "
+
+            else if (mymonth == 5)
+                month = " de Junho de "
+
+            else if (mymonth == 6)
+                month = " de Julho de "
+
+            else if (mymonth == 7)
+                month = " de Agosto de "
+
+            else if (mymonth == 8)
+                month = " de Setembro de "
+
+            else if (mymonth == 9)
+                month = " de Outubro de "
+
+            else if (mymonth == 10)
+                month = " de Novembro de "
+
+            else if (mymonth == 11)
+                month = " de Dezembro de "
+
+            document.write(day + myweekday + month + year + " - " + timeValue);
+        </script>
     </div>
     <script src="/home/src/js/app.js"></script>
 </body>

@@ -1,11 +1,28 @@
 html,
 body {
-    background-color: rgb(4, 2, 19);
+    background-image: linear-gradient(100deg, rgb(108, 105, 128), rgb(27, 26, 39), rgb(4, 2, 19));
+    
 }
 
 h1 {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(4, 2, 19);
+    text-transform: capitalize;
+}
+
+.btn-excluir {
+    background-color: transparent;
+    border: transparent;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+.btn-excluir:hover {
+    color: rgb(4, 2, 19);
 }
 
 .form-login-user {
@@ -17,42 +34,72 @@ h1 {
     text-align: center;
     border-radius: 4px;
     background-color: rgb(211, 65, 12);
+    color: white;
 }
 
 .senha-user,
 .email-user {
-    border-left: 1px;
-    border-right: 1px;
-    border-top: 1px;
     box-shadow: 0 0 0 0;
     outline: 0;
     background-color: transparent;
     color: white;
     cursor: pointer;
+    border: 1px solid white;
+    border-left: 1px;
+    border-right: 1px;
+    border-top: 1px;
+    width: 280px;
+    -webkit-box-shadow: 0 0 0 10px rgb(211, 65, 12) inset;
+    -webkit-text-fill-color: white !important;
 }
 
 .btn-view-user {
     background-color: transparent;
     border: 2px solid transparent;
     text-transform: lowercase;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     cursor: pointer;
     color: white;
     box-shadow: 0 0 0 0;
+    text-transform: capitalize;
     outline: 0;
 }
 
+.btn-view-user:hover {
+    color: rgb(4, 2, 19);
+}
+
+.backPass {
+    color: white;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+}
+
+.backPass:hover {
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+    color: rgb(4, 2, 19);
+}
+
 .btn-enter {
-    width: 200px;
-    height: 27px;
+    width: 180px;
+    height: 28px;
     border-radius: 4px;
     text-transform: capitalize;
     cursor: pointer;
     background-color: transparent;
-    border: 3px solid white;
+    border: 1px solid white;
     color: white;
+}
+
+.btn-enter:hover {
+    background-color: rgb(4, 2, 19);
 }
 
 ::placeholder {
     color: white;
+    font-size: 11px;
+    opacity: 0.8;
 }
